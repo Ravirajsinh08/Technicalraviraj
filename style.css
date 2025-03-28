@@ -1,0 +1,281 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.bogo-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: fit-content;
+}
+
+.bogo-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ff6b81; /* Pink text */
+  padding: 0 15px;
+}
+
+.line {
+  width: 96px;
+  flex: 2;
+  height: 1px;
+  background-color: #ccc; /* Grey lines */
+}
+
+.pricing-container {
+  width: 350px;
+}
+.pricing-box {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    border: 2px solid #ddd;
+    padding: 15px;
+    border-radius: 2px;
+    cursor: pointer;
+    background: #fff;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+  }
+  
+
+
+.popular-badge::before,
+.popular-badge::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  border-style: solid;
+  border-width: 8px;
+  border-color: #d7445b transparent transparent transparent;
+}
+
+.popular-badge::before {
+  left: -5px;
+  top: 3px;
+  border-left-width: 7px;
+  transform: rotate(-50deg);
+}
+
+.popular-badge::after {
+  right: -5px;
+  top: 3px;
+  border-right-width: 7px;
+  transform: rotate(50deg);
+}
+.pricing-box.active {
+  background: #ffeef0;
+  border-color: #ff6b81; 
+}
+
+
+.popular-badge {
+  position: absolute;
+  top: -12px;
+  right: 10px;
+  background: #ff6b81;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 1px 0px 5px 5px;
+}
+
+input[type="radio"] {
+  accent-color: #ff5670; /* Pink color */
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.mini-box {
+  display: flex;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.unit {
+  width: 55px;
+  font-weight: bold;
+}
+
+.discount {
+  width: max-content;
+  background: #ff6b81;
+  color: white;
+  font-size: 12px;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+.price {
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 75px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #aaa;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.subtext {
+  color: #666;
+  font-size: 14px;
+  margin: 0;
+}
+
+.options {
+  margin-top: 10px;
+  display: none;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+.box-head h5 {
+  margin: 0;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.box-head {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 145px;
+  margin-left: 10px;
+}
+select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 80px;
+}
+.custom-select {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-select select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url("https://img.icons8.com/material-sharp/24/sort-down.png")
+    no-repeat right 10px center;
+  background-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.bottom-side h4 {
+  margin: 0 -28px 10px 0px;
+}
+.bottom-side {
+  display: flex;
+  justify-content: space-between;
+}
+.price-txt {
+  font-weight: 400;
+}
+.free-txt {
+  font-weight: 200;
+  color: #ff6b82;
+}
+
+.add-to-cart {
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-btn {
+  background-color: #ff6b81;
+  color: white;
+  font-size: medium;
+  border: none;
+  padding: 10px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+  .pricing-box input[type="radio"] {
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    cursor: pointer;
+  }
+  
+  .top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 30px;
+  }
+  
+ 
+  
+  .price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  
+  .pricing-box input[type="radio"]:checked + .content .options {
+    display: block;
+  }
+  
+
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .row span {
+    width: 30px;
+    font-weight: bold;
+  }
+  
+
+.add-to-cart .icon {
+  font-size: medium;
+  margin-right: 15px;
+}
+
+.cart-btn:hover {
+  background-color: #ff5a72;
+}
